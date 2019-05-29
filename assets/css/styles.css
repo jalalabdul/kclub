@@ -32,23 +32,23 @@
 }
 
 .animated.delay-1 {
-	-webkit-animation-delay: .5s;
-	animation-delay: .5s;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
 }
 
 .animated.delay-2 {
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
+	-webkit-animation-delay: 2.5s;
+	animation-delay: 2.5s;
 }
 
 .animated.delay-3 {
-	-webkit-animation-delay: 1.5s;
-	animation-delay: 1.5s;
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
 }
 
 .animated.delay-4 {
-	-webkit-animation-delay: 2s;
-	animation-delay: 2s;
+	-webkit-animation-delay: 3.5s;
+	animation-delay: 3.5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -237,7 +237,6 @@ section h3.title{
 .main .background-video {
 	position: absolute;
 	object-fit: cover;
-	opacity: 0;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -283,12 +282,13 @@ section h3.title{
 	padding: 60px;
 }
 
-.footer .phone {
+.footer .info {
 	font-family: "kc_webfont", sans-serif;
 	font-size: 14px;
 	letter-spacing: .2em;
 	color: rgba(187,110,65,1);
 	margin-top: 10px;
+	text-transform: uppercase;
 }
 
 .footer p {
@@ -296,6 +296,7 @@ section h3.title{
 	font-size: 12px;
 	color: rgba(187,110,65,1);
 	letter-spacing: .2em;
+	text-transform: uppercase;
 }
 
 
@@ -305,12 +306,28 @@ section h3.title{
 
 @media (max-width: 480px){
 	.main h1{
-		font-size: 24px;
+		font-size: 21px;
 	}
+
 	.main h3{
 		font-size: 14px;
 	}
+
 	.main .kc-logo-picto {
-		width: 80px;
+		width: 70px;
+		margin-bottom: 30px;
+	}
+
+	.footer {
+		padding: 30px;
+	}
+
+	.footer .info {
+		font-size: 12px;
+		margin-top: 5px;
+	}
+
+	.footer p {
+		font-size: 9px;
 	}
 }
