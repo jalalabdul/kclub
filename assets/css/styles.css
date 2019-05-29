@@ -69,7 +69,7 @@
 	to {
 	  opacity: 1;
 	}
-  }
+}
   
 .fadeIn {
 	-webkit-animation-name: fadeIn;
@@ -102,12 +102,12 @@
 	  -webkit-transform: translate3d(0, 0, 0);
 	  transform: translate3d(0, 0, 0);
 	}
-  }
+}
   
-  .fadeInUp {
+.fadeInUp {
 	-webkit-animation-name: fadeInUp;
 	animation-name: fadeInUp;
-  }
+}
 
 @-webkit-keyframes breathe {
 	from {
@@ -131,10 +131,8 @@
 		opacity: 1;
 		letter-spacing: .4em;
 	}
-  }
+}
 
-
-  
 .breathe {
 	-webkit-animation-name: breathe;
 	animation-name: breathe;
@@ -168,11 +166,7 @@ body {
 	background: #001c1d;
 }
 
-ul, nav{
-	list-style: none;
-}
-
-a{
+a {
 	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
@@ -182,19 +176,6 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center; 
-}
-
-@media (max-width: 600px){
-	section{
-		padding: 80px 30px;
-	}
-}
-
-section h3.title{
-	color: #414a4f;
-	text-transform: capitalize; 
-	margin-bottom: 35px;
-	text-align: center;
 }
 
 /*----------------
@@ -223,14 +204,13 @@ section h3.title{
 }
 
 .main .background-image {
+	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	object-fit: cover;
-	background-color: #00282a;
 	z-index: -3;
 }
 
@@ -263,7 +243,7 @@ section h3.title{
 	font-family: "kc_webfont", sans-serif;
 	margin-bottom: 40px;
 	text-transform: uppercase;
-	letter-spacing: .35em;
+	letter-spacing: .2em;
 	background: rgb(225,149,98);
 	background: linear-gradient(60deg, rgba(225,149,98,1) 0%, rgba(187,110,65,1) 42%, rgba(163,98,58,1) 85%, rgba(144,86,49,1) 100%);
 	background-clip: text;
@@ -282,7 +262,7 @@ section h3.title{
 	padding: 60px;
 }
 
-.footer .info {
+.footer a {
 	font-family: "kc_webfont", sans-serif;
 	font-size: 14px;
 	letter-spacing: .2em;
@@ -304,13 +284,26 @@ section h3.title{
  	Responsive
 -------------------*/
 
-@media (max-width: 480px){
-	.main h1{
+@media (max-width: 600px){
+	section {
+		padding: 20%;
+	}
+
+	.main .background-image {
+		display: block;
+	}
+
+	.main .background-video {
+		display: none;
+	}
+
+	.main h1 {
 		font-size: 21px;
 	}
 
-	.main h3{
+	.main h3 {
 		font-size: 14px;
+		margin-bottom: 0;
 	}
 
 	.main .kc-logo-picto {
@@ -319,7 +312,7 @@ section h3.title{
 	}
 
 	.footer {
-		padding: 30px;
+		padding: 35px;
 	}
 
 	.footer .info {
@@ -329,5 +322,11 @@ section h3.title{
 
 	.footer p {
 		font-size: 9px;
+	}
+}
+
+@media (max-width: 320px){
+	section {
+		padding: 10%;
 	}
 }
