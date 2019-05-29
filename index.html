@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+
+  _      __               
+ | |    /_/  ___  _ __    
+ | |   / _ \/ _ \| '_ \   
+ | |__|  __/ (_) | | | |_ 
+ |_____\___|\___/|_| |_(_)
+                          
+
+ site       : https://leondesignagency.com
+ email      : hello@leondesignagency.com
+ twitter    : @leon_design_agency
+
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome to The Club</title>
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<section class="main">
+		<video class="background-video" autoplay muted loop id="kcVideo">
+				<source src="assets/kc_bg_loop.mp4" type="video/mp4">
+		</video>
+		<div class="animated-slow fadeIn background-image" style="background-image: url(assets/img/kc_bg.jpg);"></div>
+		<a class="kc-logo-picto animated fadeIn delay-1" href="#"><img src="assets/kc_logo_2.svg"></a>
+		<h1 class="animated fadeIn breathe delay-2">Welcome to the club</h1>
+		<h3 class="animated fadeIn delay-3">Opening January 2020</h3>
+		<!-- <a class="kc-logo animated fadeIn delay-3" href="#"><img src="assets/kc_logo.svg"></a> -->
+	</section>
+	<section class="footer">
+			<p class="animated fadeInUp delay-4">More Info:</p>
+			<a class="phone animated fadeInUp delay-4" href="tel:6288219082080" class="animated fadeIn delay-3" href="#">+62 882 1908 2080</a>
+	</section>
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(window).on('load', function() {
+	setTimeout(function(){
+		$(".background-video").css("opacity", 1);
+},4000); 
+})
+</script>
+</body>
+</html>
